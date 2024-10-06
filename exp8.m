@@ -3,7 +3,7 @@ clearvars; clc;
 % Simulation parameters
 nSymm = 10^4; % Number of OFDM Symbols to transmit
 EbN0dB = 0:2:20; % Bit to noise ratio
-MOD_TYPE = 'MPSK'; % Modulation type 'MPSK' or 'MOAM'
+MOD_TYPE = 'MPSK'; % Modulation type 'MPSK' or 'MQAM'
 M = 64; % Choose modulation order for the chosen MOD_TYPE
 N = 64; % FFT size or total number of subcarriers (used + unused) 64
 Ncp = 16; % Number of symbols in the cyclic prefix
