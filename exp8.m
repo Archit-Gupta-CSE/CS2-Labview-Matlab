@@ -29,7 +29,7 @@ for i = 1:length(EsN0dB)
         % Receiver
         y = remove_cyclic_prefix(r, Ncp, N); % Remove CP
         Y = fft(y, N); % DFT
-        [~, dcap] = iqoptDetector(Y, ref); % Demapper using IQ detector
+        [~, dcap] = iqOptDetector(Y, ref); % Demapper using IQ detector
 
         % Error counter
         d = d(:).';  % Ensure d is a row vector
